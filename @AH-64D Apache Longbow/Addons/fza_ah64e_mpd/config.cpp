@@ -1,10 +1,10 @@
 // AH-64E Guardian - Multi-Purpose Display
-// Phase 1: Scaffold - depends on D variant MPD
-// Phase 3: Open Systems Architecture displays
-//   - Color MPDs replacing monochrome
-//   - MUM-T control pages for UAS integration
-//   - Updated TSD with enhanced SA features
-//   - Link 16 / SADL blue force tracking overlay
+// Open Systems Architecture (OSA) display suite:
+//   - Color MPDs (inherits D variant display pages)
+//   - Extended TSD with FCR V6 doubled range rings
+//   - MUM-T control pages for UAS integration (Phase 5)
+//   - Link 16 / SADL blue force tracking overlay (Phase 5)
+//   - 3rd MPD replaces DVO in CPG cockpit (future)
 
 class CfgPatches
 {

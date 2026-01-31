@@ -31,6 +31,9 @@ class CfgVehicles {
         // Override SFM+ with E-variant flight model parameters
         #include "cfgVehicles\sfmplus.hpp"
 
+        // M-TADS/PNVS (Arrowhead) turret with improved optics
+        #include "cfgVehicles\turrets.hpp"
+
         // AH-64E uses the same 3D model as D for now
         // TODO: Update model reference if E-specific model is created
         model = "\fza_ah64_model\fza_ah64d_b1.p3d";
@@ -41,14 +44,22 @@ class CfgVehicles {
         altFullForce        = 1700;   // m - 701D maintains full power higher (~5577ft)
         altNoForce          = 9500;   // m - improved high-altitude performance
 
+        // Incoming missile detection - CMWS Gen3 (16 = IR sensor based)
+        incomingMissileDetectionSystem = 16;
+
         // Sensors - E has improved datalink capability
         // TODO Phase 5: Enhanced datalink and MUM-T
         receiveRemoteTargets = 1;
         reportRemoteTargets  = 1;
         reportOwnPosition    = 1;
 
+        // E-variant sensor suite: AN/APG-78 V6 FCR with doubled range
+        class Components: Components {
+            #include "\fza_ah64e_fcr\CfgSensors.hpp"
+        };
+
         class Library : Library {
-            libTextDesc = "The AH-64E Guardian (formerly AH-64D Block III) is the latest production variant of the Apache attack helicopter. Key upgrades include the General Electric T700-GE-701D engine providing approximately 2000 SHP per engine, an upgraded transmission rated for higher continuous power, improved composite main rotor blades, and an open systems architecture avionics suite. The E model supports Level 4 Manned-Unmanned Teaming (MUM-T) for control of unmanned aerial systems, and features improved sensors including the Modernized Target Acquisition Designation Sight (M-TADS). Maximum gross weight is increased to approximately 23,000 lbs, with improved high/hot performance over the D variant. The AH-64E entered service with the US Army in 2011 and has been widely exported internationally.";
+            libTextDesc = "The AH-64E Guardian (formerly AH-64D Block III) is the latest production variant of the Apache attack helicopter. Key upgrades include the General Electric T700-GE-701D engine providing approximately 2000 SHP per engine, an upgraded transmission rated for higher continuous power, improved composite main rotor blades, and an open systems architecture avionics suite. The E model supports Level 4 Manned-Unmanned Teaming (MUM-T) for control of unmanned aerial systems, and features improved sensors including the Modernized Target Acquisition Designation Sight (M-TADS/PNVS Arrowhead) with 2nd generation FLIR and color day sensor. The AN/APG-78 Longbow FCR with Version 6 software provides doubled detection range and 360-degree surveillance mode. Aircraft survivability is enhanced with the AN/AAR-57 CMWS Gen3 and CIRCM directional laser countermeasures. Maximum gross weight is increased to approximately 23,000 lbs, with improved high/hot performance over the D variant. The AH-64E entered service with the US Army in 2011 and has been widely exported internationally.";
         };
     };
 

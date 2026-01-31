@@ -1,9 +1,10 @@
 // AH-64E Guardian - Fire Control Radar
-// Phase 1: Scaffold - depends on D variant FCR
-// Phase 3: Upgraded AN/APG-78 Longbow FCR
-//   - Improved detection range and scan speed
-//   - Enhanced classification capability
-//   - Better ECCM performance
+// AN/APG-78 Longbow FCR with Version 6 software
+//   - Doubled detection range (8km → 16km) across all modes
+//   - 360-degree surveillance mode
+//   - Maritime targeting mode (MTM)
+//   - Enhanced ECCM and classification
+//   - Faster scan-to-engage timeline
 
 class CfgPatches
 {

@@ -1,9 +1,11 @@
 // AH-64E Guardian - Aircraft Survivability Equipment
-// Phase 1: Scaffold - depends on D variant ASE
-// Phase 6: Upgraded survivability systems
-//   - Common Missile Warning System (CMWS) replacing AAR-57
-//   - CIRCM (Common Infrared Countermeasures) directed energy system
-//   - Improved radar warning receiver
+// AN/AAR-57(V)3/5 CMWS Gen3 + CIRCM integration
+//   - UV-based missile and hostile fire warning (5 sensors, 360-deg)
+//   - Gen3X ECU with faster processing
+//   - CIRCM (AN/ALQ-212) directional laser-based IRCM
+//   - Hostile fire indication integrated with missile warning
+//   - Improved countermeasure dispenser (ICD)
+//   - Extended detection range (10km vs 8km)
 
 class CfgPatches
 {

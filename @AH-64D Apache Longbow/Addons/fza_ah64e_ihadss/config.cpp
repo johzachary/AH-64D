@@ -1,9 +1,11 @@
 // AH-64E Guardian - Integrated Helmet and Display Sight System
-// Phase 1: Scaffold - depends on D variant IHADSS
-// Phase 3: Updated display symbology for E variant
-//   - Color MPD integration
-//   - MUM-T status symbology
-//   - Improved FLIR overlay
+// M-TADS/PNVS (Arrowhead) integration:
+//   - 2nd gen FLIR with improved resolution and reduced noise
+//   - M-DSA color day sensor with near-IR capability
+//   - VNsight visible/near-IR blended with PNVS FLIR
+//   - Improved laser spot tracker (4-quadrant detector)
+//   - Eye-safe laser rangefinder for urban/training
+//   - MUM-T status symbology (Phase 5)
 
 class CfgPatches
 {
