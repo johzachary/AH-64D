@@ -35,12 +35,11 @@ class CfgVehicles {
         // TODO: Update model reference if E-specific model is created
         model = "\fza_ah64_model\fza_ah64d_b1.p3d";
 
-        // E variant flight envelope overrides
-        // TODO Phase 2: Update these with E-model published data
-        maxSpeed            = 298;    // km/h - same airframe limit
+        // E variant flight envelope - T700-GE-701D engine
+        maxSpeed            = 304;    // km/h - slightly higher with 701D
         fuelCapacity        = 1423;   // liters - same internal fuel
-        altFullForce        = 1615;   // m - TODO: update for -701D
-        altNoForce          = 9000;   // m - TODO: update for -701D
+        altFullForce        = 1700;   // m - 701D maintains full power higher (~5577ft)
+        altNoForce          = 9500;   // m - improved high-altitude performance
 
         // Sensors - E has improved datalink capability
         // TODO Phase 5: Enhanced datalink and MUM-T

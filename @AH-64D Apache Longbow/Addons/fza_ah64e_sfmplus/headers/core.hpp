@@ -1,11 +1,10 @@
 // AH-64E Guardian - SFM+ Core Constants
-// Phase 1: Inherits all constants from D variant
-// Phase 2: Override velocity envelope and hold mode thresholds as needed
+// Inherits all constants from D variant, overrides E-specific values
 
 // Include D variant constants as baseline
 #include "\fza_ah64_sfmplus\headers\core.hpp"
 
-// TODO Phase 2: Override E-specific constants here
-// Example overrides (uncomment and adjust when E-model data is available):
-// #undef VEL_VNE
-// #define VEL_VNE 133.0 // E model slightly higher VNE if applicable
+// E-variant VNE override: +4 kts structural limit over D
+// D = 128.611 m/s (250 kts), E = 130.668 m/s (254 kts)
+#undef VEL_VNE
+#define VEL_VNE 130.668
