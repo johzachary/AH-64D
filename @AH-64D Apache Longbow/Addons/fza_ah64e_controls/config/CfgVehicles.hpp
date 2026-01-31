@@ -53,8 +53,9 @@ class CfgVehicles {
         reportRemoteTargets  = 1;
         reportOwnPosition    = 1;
 
-        // E-variant sensor suite: AN/APG-78 V6 FCR with doubled range
+        // E-variant sensor suite and pylon loadouts
         class Components: Components {
+            #include "cfgVehicles\pylons.hpp"
             #include "\fza_ah64e_fcr\CfgSensors.hpp"
         };
 
