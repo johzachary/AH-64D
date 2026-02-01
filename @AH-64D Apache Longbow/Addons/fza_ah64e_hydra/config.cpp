@@ -1,9 +1,8 @@
 // AH-64E Guardian - HYDRA 70 Rocket System
-// Phase 1: Scaffold - depends on D variant hydra
-// Phase 4: APKWS (Advanced Precision Kill Weapon System)
-//   - Laser-guided 70mm rockets
-//   - Semi-active laser homing guidance kit
-//   - Retains all standard unguided warhead types
+// Inherits D variant 2.75" rocket system (M261 launcher)
+// Retains all standard unguided warhead types
+// Future: APKWS (Advanced Precision Kill Weapon System)
+//   - Laser-guided 70mm rockets with SAL homing guidance kit
 
 class CfgPatches
 {

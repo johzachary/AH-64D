@@ -1,17 +1,15 @@
 // AH-64E Guardian - SFM+ Flight Model
-// Phase 1: Scaffold - reuses D variant SFM+ functions
-// Phase 2: Override functions with E-specific engine/rotor/transmission parameters
+// Inherits D variant SFM+ functions (engine, rotor, transmission logic)
 //
-// The SFM+ system reads flight parameters from the vehicle's Fza_SfmPlus config class
-// at runtime (via fn_coreConfig.sqf), so the E variant's different performance tables
-// in fza_ah64e_controls/config/cfgVehicles/sfmplus.hpp will automatically be used
-// when flying the E variant vehicle.
+// E-variant flight performance is defined via config-driven parameters in
+// fza_ah64e_controls/config/cfgVehicles/sfmplus.hpp (T700-GE-701D tables).
+// The SFM+ system reads Fza_SfmPlus config at runtime (fn_coreConfig.sqf),
+// so the E variant's performance tables are used automatically.
 //
-// Functions that may need E-specific overrides in Phase 2:
-//   - fn_engine.sqf / fn_engine2.sqf (T700-GE-701D characteristics)
-//   - fn_simpleRotorMain.sqf (improved composite rotor blades)
+// Future: E-specific function overrides if needed for:
+//   - fn_engine.sqf (T700-GE-701D-specific characteristics)
+//   - fn_simpleRotorMain.sqf (composite rotor blade improvements)
 //   - fn_transmission.sqf (upgraded transmission rating)
-//   - fn_perfData.sqf (higher gross weight support)
 
 class CfgPatches
 {

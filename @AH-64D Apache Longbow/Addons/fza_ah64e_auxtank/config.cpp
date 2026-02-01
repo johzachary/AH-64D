@@ -1,6 +1,5 @@
 // AH-64E Guardian - Auxiliary Fuel Tanks
-// Phase 1: Scaffold - depends on D variant aux tank
-// Same 230-gallon external fuel tank system
+// Inherits D variant 230-gallon external fuel tank system
 
 class CfgPatches
 {

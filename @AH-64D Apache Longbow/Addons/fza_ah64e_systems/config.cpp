@@ -1,7 +1,6 @@
 // AH-64E Guardian - Aircraft Systems
-// Phase 1: Scaffold - depends on D variant systems
-// Future: Override electrical, hydraulic, and drivetrain systems as needed
-//   - Upgraded transmission continuous power rating
+// Inherits D variant electrical, hydraulic, and drivetrain systems
+// Future: Upgraded transmission continuous power rating
 //   - Potential electrical system changes for OSA avionics
 
 class CfgPatches

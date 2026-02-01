@@ -1,6 +1,5 @@
 // AH-64E Guardian - Lighting System
-// Phase 1: Scaffold - depends on D variant lighting
-// Same navigation and flood lighting as D variant
+// Inherits D variant navigation and flood lighting
 
 class CfgPatches
 {

@@ -1,6 +1,5 @@
 // AH-64E Guardian - Common/Shared Components
-// Phase 1: Scaffold - depends on D variant common
-// Shared base classes, PID controllers, and utilities
+// Inherits D variant shared base classes, PID controllers, and utilities
 
 class CfgPatches
 {

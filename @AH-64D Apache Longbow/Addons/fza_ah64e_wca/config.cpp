@@ -1,6 +1,6 @@
 // AH-64E Guardian - Weapon Control Assembly
-// Phase 1: Scaffold - depends on D variant WCA
-// Phase 4: Updated WCA panel for E variant weapons
+// Inherits D variant WCA panel and weapon management
+// Future: Updated WCA for E variant weapon types (AGM-114R default)
 
 class CfgPatches
 {

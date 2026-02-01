@@ -1,6 +1,5 @@
 // AH-64E Guardian - AI Crew Management
-// Phase 1: Scaffold - depends on D variant AI crew
-// Same AI crew behavior as D variant
+// Inherits D variant AI crew behavior
 
 class CfgPatches
 {

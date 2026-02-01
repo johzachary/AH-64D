@@ -1,8 +1,6 @@
 // AH-64E Guardian - Audio System
-// Phase 1: Scaffold - depends on D variant audio
-// Phase 6: E-specific audio changes if any
-//   - Potential engine sound differences for -701D
-//   - Updated warning/caution tones
+// Inherits D variant audio (engine, rotor, warning/caution tones)
+// Future: T700-GE-701D engine sound differentiation
 
 class CfgPatches
 {

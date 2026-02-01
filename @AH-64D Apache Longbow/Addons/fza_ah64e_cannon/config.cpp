@@ -1,8 +1,7 @@
-// AH-64E Guardian - M230 Chain Gun
-// Phase 1: Scaffold - depends on D variant cannon
-// Phase 4: M230E1 retained on E variant
-//   - Same 30mm automatic cannon
-//   - Potential fire control improvements via OSA
+// AH-64E Guardian - M230E1 Chain Gun
+// Inherits D variant 30mm automatic cannon system
+// Same M230E1 linkless feed cannon with 1200 RPM cyclic rate
+// Future: Fire control improvements via OSA integration
 
 class CfgPatches
 {

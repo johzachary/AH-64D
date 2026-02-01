@@ -1,6 +1,6 @@
 // AH-64E Guardian - Customization System
-// Phase 1: Scaffold - depends on D variant customise
-// Phase 6: E-specific texture sources, liveries, and ACE integration
+// Inherits D variant customization and livery system
+// Future: E-specific texture sources and liveries
 
 class CfgPatches
 {

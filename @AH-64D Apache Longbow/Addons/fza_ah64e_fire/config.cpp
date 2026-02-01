@@ -1,6 +1,6 @@
 // AH-64E Guardian - Fire Control System
-// Phase 1: Scaffold - depends on D variant fire control
-// Phase 4: Improved fire control via OSA integration
+// Inherits D variant fire control logic
+// Future: Improved fire control via OSA integration
 
 class CfgPatches
 {

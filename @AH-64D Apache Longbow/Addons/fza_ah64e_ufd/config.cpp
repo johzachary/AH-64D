@@ -1,6 +1,6 @@
 // AH-64E Guardian - Up Front Display
-// Phase 1: Scaffold - depends on D variant UFD
-// Phase 3: Updated UFD for E variant systems status
+// Inherits D variant UFD systems status display
+// Future: Updated UFD pages for E variant systems
 
 class CfgPatches
 {

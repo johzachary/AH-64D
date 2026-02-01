@@ -1,6 +1,5 @@
 // AH-64E Guardian - Crew Classes
-// Phase 1: Scaffold - depends on D variant crew
-// Uses same crew character models as D variant
+// Inherits D variant crew character models
 
 class CfgPatches
 {

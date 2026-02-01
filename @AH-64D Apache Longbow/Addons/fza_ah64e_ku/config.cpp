@@ -1,6 +1,6 @@
 // AH-64E Guardian - Keyboard Unit
-// Phase 1: Scaffold - depends on D variant KU
-// Phase 3: Updated KU for OSA interface
+// Inherits D variant KU functionality
+// Future: Updated KU for OSA (Open Systems Architecture) interface
 
 class CfgPatches
 {
