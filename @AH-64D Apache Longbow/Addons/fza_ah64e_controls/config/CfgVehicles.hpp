@@ -55,7 +55,7 @@ class CfgVehicles {
         // E-variant sensor suite and pylon loadouts
         class Components: Components {
             #include "cfgVehicles\pylons.hpp"
-            #include "\fza_ah64e_fcr\CfgSensors.hpp"
+            #include "cfgVehicles\CfgSensors.hpp"
         };
 
         class Library : Library {
