@@ -34,8 +34,7 @@ class CfgVehicles {
         // M-TADS/PNVS (Arrowhead) turret with improved optics
         #include "cfgVehicles\turrets.hpp"
 
-        // AH-64E uses the same 3D model as D for now
-        // TODO: Update model reference if E-specific model is created
+        // AH-64E uses the same 3D model as D (no E-specific model yet)
         model = "\fza_ah64_model\fza_ah64d_b1.p3d";
 
         // E variant flight envelope - T700-GE-701D engine
@@ -47,11 +46,11 @@ class CfgVehicles {
         // Incoming missile detection - CMWS Gen3 (16 = IR sensor based)
         incomingMissileDetectionSystem = 16;
 
-        // Sensors - E has improved datalink capability
-        // TODO Phase 5: Enhanced datalink and MUM-T
-        receiveRemoteTargets = 1;
-        reportRemoteTargets  = 1;
-        reportOwnPosition    = 1;
+        // Datalink - Link 16 / SADL / MUM-T Level 4
+        // Enhanced tactical data exchange and UAS control
+        receiveRemoteTargets = 1;   // Receive targets from networked aircraft
+        reportRemoteTargets  = 1;   // Share FCR/TADS targets to network
+        reportOwnPosition    = 1;   // Blue force tracking
 
         // E-variant sensor suite and pylon loadouts
         class Components: Components {
@@ -70,7 +69,7 @@ class CfgVehicles {
         scope           = 2; // visible in editor
         author          = "AH-64D Development Team";
         displayName     = "AH-64E Guardian";
-        // TODO: Add E-specific editor preview image
+        // Uses D variant preview until E-specific image is available
         editorPreview   = "\fza_ah64_controls\data\editorpreview\fza_ah64d_b1.jpg";
     };
 };

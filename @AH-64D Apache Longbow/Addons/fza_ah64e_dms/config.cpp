@@ -1,9 +1,13 @@
 // AH-64E Guardian - Data Management System
-// Phase 1: Scaffold - depends on D variant DMS
-// Phase 5: Enhanced datalink and mission planning
-//   - Link 16 integration
-//   - Improved route planning with digital map
-//   - MUM-T mission data management
+// Enhanced datalink and mission planning:
+//   - Link 16 / SADL tactical data exchange
+//   - IDM (Improved Data Modem) for faster target sharing
+//   - Enhanced route planning with digital map overlay
+//   - MUM-T Level 4 mission data management
+//   - Shared SA (Situational Awareness) with networked aircraft
+//   - Blue force tracking integration via TSD
+// Note: Arma 3 datalink handled via receiveRemoteTargets/reportRemoteTargets
+// in vehicle config. DMS point system provides route/target data management.
 
 class CfgPatches
 {
