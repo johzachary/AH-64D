@@ -22,7 +22,9 @@ class CfgPatches
 
 class CfgAmmo {
     class ammo_Penetrator_Base;
-    class fza_agm114base;
+    class fza_agm114base {
+        class ace_missileguidance;
+    };
 
     // AGM-114R Penetrator - 9kg Tandem HEAT (same as K series)
     class Fza_Penetrator_9KG_Tandem_R: ammo_Penetrator_Base
