@@ -38,6 +38,8 @@ class CfgAmmo {
     // IBFS warhead combines shaped charge + blast-frag in single round
     class fza_agm114r : fza_agm114base
     {
+        cartridge                   = "";       // Missile - no cartridge casing
+        craterShape                 = "";       // Uses explosion effects instead
         fza_salType                 = "sal2";
         model                       = "\fza_ah64_hellfire\fza_agm114k"; // Uses K model as visual proxy
         proxyShape                  = "\fza_ah64_hellfire\fza_agm114k";
