@@ -22,9 +22,7 @@ class CfgPatches
 
 class CfgAmmo {
     class ammo_Penetrator_Base;
-    class fza_agm114base {
-        class ace_missileguidance;
-    };
+    class fza_agm114base;
 
     // AGM-114R Penetrator - 9kg Tandem HEAT (same as K series)
     class Fza_Penetrator_9KG_Tandem_R: ammo_Penetrator_Base
@@ -68,9 +66,6 @@ class CfgAmmo {
         allowAgainstInfantry        = 1;
         cost                        = 1100;   // Newest and most capable variant
 
-        class ace_missileguidance: ace_missileguidance {
-            enabled = 1;
-        };
     };
 };
 
