@@ -10,33 +10,6 @@ private _projName = "AH-64D Official Project";
 ] call CBA_fnc_addSetting;
 
 [
-    "fza_ah64_freeCursorSensitivity",
-    "SLIDER",
-    "Free cursor mode sensitivity",
-    [_projName, "Control"],
-    [0, 0.1, 0.05, 2],
-    2
-] call CBA_fnc_addSetting;
-
-[
-    "fza_ah64_freeCursorfreelooklock",
-    "CHECKBOX",
-    "Lock the cursor when in free look",
-    [_projName, "Control"],
-    [true],
-    2
-] call CBA_fnc_addSetting;
-
-[
-    "fza_ah64_enableClickHelper",
-    "CHECKBOX",
-    ["Enable cockpit hints", "Disabling this will hide the Cockpit hints"],
-    [_projName, "UI"],
-    [true],
-    2
-] call CBA_fnc_addSetting;
-
-[
     "fza_ah64_vanillaTargetingEnable",
     "CHECKBOX",
     ["Show vanilla targeting information (restart required)", "Disabling this will hide vanilla targeting information (restart needed)"],
@@ -47,6 +20,15 @@ private _projName = "AH-64D Official Project";
         profileNamespace setVariable ["fza_ah64_enableTargeting", [0, 1] select _this];
         saveProfileNamespace;
     }
+] call CBA_fnc_addSetting;
+
+[
+    "fza_ah64_sfmplusRealismSetting",
+    "LIST",
+    ["Aircraft Realism Settings", ""],
+    [_projName, "Flight model"],
+    [[CASUAL, REALISTIC],["Casual", "Realistic"],0],
+    0
 ] call CBA_fnc_addSetting;
 
 [
@@ -117,16 +99,7 @@ private _projName = "AH-64D Official Project";
     "CHECKBOX",
     ["Keyboard Auto Pedal", "DOES NOT WORK WITH STICKY YAW! When enabled, the pedals are automatically managed by AI."],
     [_projName, "Flight model"],
-    [false],
-    2
-] call CBA_fnc_addSetting;
-
-[
-    "fza_ah64_sfmPlusAutoPedalTimeScalar",
-    "SLIDER",
-    ["Auto Pedal Time Scalar", "When auto pedal is enabled, controls the time it takes to wash in player input. A setting of 1.0 means maximum throw is washed in immediately on pressing the pedal key. 1.5 is the default and recommended for keyboard only, a setting of 1.0 is recommended for pedals and gamepad users."],
-    [_projName, "Flight model"],
-    [0.1, 2.0, 1.5, 1],
+    [true],
     2
 ] call CBA_fnc_addSetting;
 
